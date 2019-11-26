@@ -11,18 +11,20 @@ export default class HelloWorld2 extends Component {
     this.increaseSalary = this.increaseSalary.bind(this);
   }
   increaseSalary(){
-    this.setState({
-      FirstName: "Gitanjali",
-      LastName: "Mundhe",
-      Salary : this.state.Salary + 1000
-    })
+    this.setState((state)=>({
+      Salary : state.Salary + 1000
+    }));
+
+        this.setState((state)=>({
+      Salary : state.Salary + 222
+    }));
   }
   render() {
     return (
       <div>
         <div>FirstName : {this.props.FirstName}</div>
         <div>LastName: {this.props.LastName}</div>
-        <div>Salary: {this.props.Salary}</div>
+        <div>Salary: {this.state.Salary}</div>
         <button onClick = {this.increaseSalary}>Increase Salary</button>
       </div>
     );
