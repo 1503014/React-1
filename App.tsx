@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HelloWorld from './Components/HelloWorld';
-import HelloWorld2 from './Components/HelloWorld2'
+import HelloWorld2 from './Components/HelloWorld2';
+import PureComponentDemo from './Components/PureComponentDemo';
 function Click(a)
 {
   return (
@@ -11,8 +12,7 @@ function Click(a)
 export default function App() {
   return (
     <div>
-    <HelloWorld  name = "Hello World" MyHandler = {Click}/>
-    <HelloWorld2 FirstName = "Gitanjali" LastName = "Mundhe" Salary = "1000"/>
+      <PureComponentDemo />
     </div>
   )
 }
