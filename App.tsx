@@ -8,6 +8,7 @@ import TextFile from './Components/TextFile';
 import Clone from './Components/SpreadClone';
 import InputWithFocus from './Components/InputWithFocus';
 import CallBackRef from './Components/CallBackRef';
+import EmployeeForm from './Components/EmployeeForm';
 
 
 function Click(a)
@@ -19,8 +20,7 @@ function Click(a)
 export default function App() {
   return (
     <div>
-      <InputWithFocus />
-      <CallBackRef />
+      <EmployeeForm />
     </div>
   )
 }
