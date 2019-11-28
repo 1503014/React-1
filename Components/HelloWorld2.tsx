@@ -11,7 +11,7 @@ export default class HelloWorld2 extends Component {
     this.increaseSalary = this.increaseSalary.bind(this);
   }
   increaseSalary(){
-    this.setState((state)=>({
+    this.setState((state)=>({        //setState Function
       Salary : state.Salary + 1000
     }));
 

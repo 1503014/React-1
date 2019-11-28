@@ -14,7 +14,7 @@ export default class PureComponentDemo extends PureComponent {
     const newWord = this.state.words;
     newWord.push("!!");
     console.log(newWord);
-    this.setState({words : newWord});
+    this.setState({words : newWord});         
   }
 
   render() {
