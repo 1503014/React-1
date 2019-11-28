@@ -18,6 +18,7 @@ export default function App() {
   return (
     <div>
       <TextFile />
+      <HelloWorld name = "aaa" Salary = {1000} />
     </div>
   )
 }
