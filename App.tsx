@@ -5,7 +5,9 @@ import HelloWorld2 from './Components/HelloWorld2';
 import PureComponentDemo from './Components/PureComponentDemo';
 import Timer from './Components/Timer';
 import TextFile from './Components/TextFile';
-import Clone from './Components/SpreadClone'
+import Clone from './Components/SpreadClone';
+import InputWithFocus from './Components/InputWithFocus';
+import CallBackRef from './Components/CallBackRef';
 
 
 function Click(a)
@@ -17,8 +19,8 @@ function Click(a)
 export default function App() {
   return (
     <div>
-      <TextFile />
-      <HelloWorld name = "aaa" Salary = {1000} />
+      <InputWithFocus />
+      <CallBackRef />
     </div>
   )
 }
