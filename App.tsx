@@ -10,6 +10,7 @@ import InputWithFocus from './Components/InputWithFocus';
 import CallBackRef from './Components/CallBackRef';
 import EmployeeForm from './Components/EmployeeForm';
 import CustomButtonWrapper from './Components/CustomButtonWrapper';
+import BorderComp from './Components/PropsChildren';
 
 
 function Click(a)
@@ -21,7 +22,12 @@ function Click(a)
 export default function App() {
   return (
     <div>
-      <CustomButtonWrapper  MyButtonHandler={()=>alert("Clicked")}/>
+    {
+      //<CustomButtonWrapper  MyButtonHandler={()=>alert("Clicked")}
+    }
+    <BorderComp>
+    <button >Hello</button>
+    </BorderComp>
     </div>
   )
 }
