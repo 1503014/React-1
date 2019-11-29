@@ -9,6 +9,7 @@ import Clone from './Components/SpreadClone';
 import InputWithFocus from './Components/InputWithFocus';
 import CallBackRef from './Components/CallBackRef';
 import EmployeeForm from './Components/EmployeeForm';
+import CustomButtonWrapper from './Components/CustomButtonWrapper';
 
 
 function Click(a)
@@ -20,7 +21,7 @@ function Click(a)
 export default function App() {
   return (
     <div>
-      <EmployeeForm />
+      <CustomButtonWrapper  MyButtonHandler={()=>alert("Clicked")}/>
     </div>
   )
 }
